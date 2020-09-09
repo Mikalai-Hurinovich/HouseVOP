@@ -1,0 +1,96 @@
+extends layout/layout.pug
+
+block content
+    // begin options
+    section#options.options.revealator-fade
+        .container_center
+            .options__content
+                .options__item.revealator-slideup
+                    .options__img
+                        img(src="img/options/1.svg", alt="")
+                    .options__text Рядом исторические парки и скверы
+                .options__item.revealator-slideup
+                    .options__img 
+                        img(src="img/options/2.svg", alt="")
+                    .options__text Полностью обустроенный
+                .options__item.revealator-slideup
+                    .options__img 
+                        img(src="img/options/3.svg", alt="")
+                    .options__text 10 фонтанов на территории
+                .options__item.revealator-slideup
+                    .options__img 
+                        img(src="img/options/4.svg", alt="")
+                    .options__text 6 км <br> велодорожек
+                .options__number II
+
+
+
+    // end options
+
+    // begin portfolio
+    section#portfolio.portfolio.section
+        .container_center
+            .options__number III
+            h2.section__title.revealator-slidedown Наши квартиры
+            .portfolio__content
+                .portfolio__item.revealator-slidedown
+                    .portfolio__img
+                        img(src="img/portfolio/1.jpg", alt="")
+                        .portfolio__text Лофт — 3 этажа
+                .portfolio__item.revealator-slidedown
+                    .portfolio__img
+                        img(src="img/portfolio/2.jpg", alt="")
+                        .portfolio__text Лофт — 2 этажа
+                .portfolio__item.revealator-slidedown
+                    .portfolio__img
+                        img(src="img/portfolio/1.jpg", alt="")
+                        .portfolio__text Лофт — 3 этажа
+                .portfolio__item.revealator-slidedown
+                    .portfolio__img
+                        img(src="img/portfolio/2.jpg", alt="")
+                        .portfolio__text Лофт — 2 этажа
+
+
+    // end portfolio
+
+    // begin information
+    section#information.information.revealator-fade
+        .container_center.revealator-fade
+            h2.section__title Хотите посмотреть?
+            .information__content.revealator-fade
+                .information__left.revealator-fade
+                    .information__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+                .information__right.revealator-fade
+                    .information__row.revealator-slidedown
+                        input(type="text" placeholder="Ваше имя")
+                    .information__row.revealator-slidedown        
+                        input(type="tel" placeholder="Ваш телефон")
+                    .information__row.revealator-slidedown
+                        .info *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+                    .information__row.revealator-slidedown 
+                        button.btn(type="button") Посмотреть район
+
+    // end ininformationation
+
+    // begin video
+    section#video.video.revealator-fade
+        .container_center
+            .video_main 
+                iframe(width='719' height='650' src='https://www.youtube.com/embed/FAhnawACrOg' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                .video__content
+                    .video__right
+                        .options__number.options__number-rome IV
+
+    // end video
+
+    // begin map
+    section#map.map.revealator-fade
+        .container_center
+            h2.section__title Район на карте
+            .options__number.options__number-rome2 V
+            .map__content 
+                .map-responsive
+                    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150505.20100657875!2d27.45328413906144!3d53.88476083151737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1596824791102!5m2!1sru!2sby' width='1100' height='358' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0')
+
+
+    // end map

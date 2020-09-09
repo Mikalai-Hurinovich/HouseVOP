@@ -1,0 +1,29 @@
+.first__screen#first__screen
+    .container__center
+        header.header
+            .header__content
+                .header__left
+                    a.logo(href="/")
+                        img(src="img/logo.png", alt="alt")
+                nav.header__right
+                    input.navbar__swicher#navbar_toggle(type="checkbox")
+                    label(for="navbar_toggle").nav__toggle
+                    ul.navbar
+                        each navLink in [{name: 'О комплексе', href: '#'},{name: 'Район', href: '#'},{name: 'Каталог квартир', href: '#'},{name: 'Ипотека', href: '#'},{name: 'Контакты', href: '#'}]
+                            li.navbar__item
+                                a.navbar__link(href= navLink.href)= navLink.name
+
+        .content__middle
+            h1.content__middle_title Жилой комплекс <br> в историческом центре
+            .content__middle_icon
+                img(src="img/icons/mouse.svg", alt="")
+
+
+        .content__bottom
+            .content__bottom_adress  
+                img(src="img/icons/point.svg", alt="")
+                a.content__point Наб. реки Фонтанки 10-15
+
+            .content__bottom_tel  
+                img(src="img/icons/phone.svg", alt="")
+                a.content__phone(href="tel:8 (812) 123-45-67")  8 (812) 123-45-67

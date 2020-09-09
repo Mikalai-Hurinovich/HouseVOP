@@ -1,0 +1,29 @@
+-var version = '0.1';
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        link(rel='stylesheet' href='../css/fm.revealator.jquery.css')
+        script(src='//code.jquery.com/jquery-1.12.0.min.js')
+        script(src='../js/fm.revealator.jquery.js')
+
+        title HouseVOP
+
+        link(rel="stylesheet", type="text/css", href="css/style.css?"+version+"")
+    body
+
+
+        main.main_content
+            include header.pug
+            block content
+
+
+        //- include footer.pug
+        //- 
+        //- include scripts.pug
+
+        script(type="application/javascript", src="../js/script.js")
+        script(src="js/fm.revealator.jquery.js")
